@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "NDVI Prediction Using Soft Computing Techniques"
+abstract: "Implementation of gradient boosting-based soft computing techniques (CatBoost, GBM, LightGBM, XGBoost) for predicting Normalized Difference Vegetation Index (NDVI) using satellite imagery and environmental data from the Chittagong region."
+authors:
+  - family-names: "Murad"
+    given-names: "Golam"
+    email: "golammurad19@gmail.com"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # Replace with actual ORCID if available
+repository-code: "https://github.com/yourusername/NDVI-Prediction"
+url: "https://github.com/yourusername/NDVI-Prediction"
+keywords:
+  - NDVI
+  - Vegetation Monitoring
+  - Machine Learning
+  - Gradient Boosting
+  - XGBoost
+  - LightGBM
+  - CatBoost
+  - Remote Sensing
+  - Google Earth Engine
+  - Environmental Modeling
+  - Time Series Analysis
+  - Satellite Imagery
+license: MIT
+version: 1.0.0
+date-released: 2026-01-12
