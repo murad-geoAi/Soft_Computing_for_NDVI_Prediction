@@ -47,20 +47,17 @@ NDVI-Prediction/
 │   └── gee_data_preparation.js        # Google Earth Engine data extraction script
 ├── notebooks/                         # Analysis notebooks
 │   └── ndvi_prediction.ipynb          # Main analysis and modeling
-├── results/                           # Model outputs
-│   └── model_performance_comparison.csv
-├── figures/                           # Visualizations
+├── results/                           # Model outputs and figures
+│   ├── model_performance_comparison.csv
 │   ├── correlation_heatmap.png
-│   ├── model_diagnostics/             # Model diagnostic plots
-│   │   ├── catboost_diagnostic_plots.png
-│   │   ├── gbm_diagnostic_plots.png
-│   │   ├── lightgbm_diagnostic_plots.png
-│   │   └── xgboost_diagnostic_plots.png
-│   └── shap_analysis/                 # SHAP interpretability plots
-│       ├── catboost_shap_summary.png
-│       ├── gbm_shap_summary.png
-│       ├── lightgbm_shap_summary.png
-│       └── xgboost_shap_summary.png
+│   ├── CatBoost_diagnostic_plots.png
+│   ├── CatBoost_shap_summary.png
+│   ├── GBM_diagnostic_plots.png
+│   ├── GBM_shap_summary.png
+│   ├── LightGBM_diagnostic_plots.png
+│   ├── LightGBM_shap_summary.png
+│   ├── XGBoost_diagnostic_plots.png
+│   └── XGBoost_shap_summary.png
 └── docs/                              # Additional documentation
     └── methodology.md                 # Detailed methodology
 ```
