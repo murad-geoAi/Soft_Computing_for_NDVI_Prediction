@@ -23,14 +23,23 @@ from dataset import NdviDataModule
 from model import MLPRegressor
 from callback import get_callbacks
 
+
 def main():
     parser = argparse.ArgumentParser(description="NDVI Prediction")
-    parser.add_argument("--data_path", type=str, default=DATA_PATH, help="Path to the dataset")
+    parser.add_argument(
+        "--data_path", type=str, default=DATA_PATH, help="Path to the dataset"
+    )
     args = parser.parse_args()
 
     pl.seed_everything(SEED)
 
-    dm = NdviDataModule(data_path=args.data_path, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, train_valid_split=TRAIN_VALIDATION_SPLIT, seed=SEED)
+    dm = NdviDataModule(
+        data_path=args.data_path,
+        batch_size=BATCH_SIZE,
+        num_workers=NUM_WORKERS,
+        train_valid_split=TRAIN_VALIDATION_SPLIT,
+        seed=SEED,
+    )
     model = MLPRegressor(input_dim=len(INPUT_FEATURES), lr=LEARNING_RATE)
     callbacks = get_callbacks()
     logger = TensorBoardLogger(LOG_DIR, name="mlp_regressor")
@@ -49,7 +58,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-    
-

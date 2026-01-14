@@ -1,5 +1,10 @@
-from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, LearningRateMonitor
+from pytorch_lightning.callbacks import (
+    ModelCheckpoint,
+    EarlyStopping,
+    LearningRateMonitor,
+)
 from config import CHECKPOINT_DIR
+
 
 def get_callbacks():
     checkpoint_callback = ModelCheckpoint(
