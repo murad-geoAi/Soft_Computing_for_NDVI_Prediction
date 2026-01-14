@@ -1,4 +1,9 @@
+
+# config.py
 from pathlib import Path
+
+DATA_PATH = Path("/content/drive/MyDrive/ndvi_project/data/NDVI Prediction.csv")
+
 
 # Data
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
