@@ -1,6 +1,6 @@
 # train.py
 
-import on
+import os
 import argparse
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import TensorBoardLogger
@@ -11,7 +11,8 @@ from config import (
     LEARNING_RATE,
     NUM_WORKERS,
     INPUT_FEATURES,
-    TARGET_FEATURE,
+    DATA_PATH,
+    TRAIN_VALIDATION_SPLIT,
     CHECKPOINT_DIR,
     LOG_DIR,
     SEED,
